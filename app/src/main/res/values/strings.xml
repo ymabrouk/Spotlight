@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Spotlight</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="currently_no_news_to_display">Currently, No News to display</string>
+
+
+    <string name="api_key_id" translatable="false">74acee37c7cf48829b7fbf4a53e9bf9e</string>
+
+</resources>
