@@ -1,7 +1,6 @@
-package com.mindset.spots.view.ui.dashboard
+package com.mindset.spots.view.viewModel
 
 import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Transformations
 import androidx.lifecycle.ViewModel
 import androidx.paging.LivePagedListBuilder
@@ -11,10 +10,10 @@ import com.mindset.spots.dataSource.NewsDataSourceFactory
 import com.mindset.spots.model.Article
 import com.mindset.spots.model.State
 import com.mindset.spots.service.api.ApiClient
-import com.mindset.spots.service.repository.FeedsRepository
+import com.mindset.spots.service.api.ApiService
 import io.reactivex.disposables.CompositeDisposable
 
-class DashboardViewModel  : ViewModel() {
+class NewsListViewModel  : ViewModel() {
 
     private val networkService = ApiClient.instance
     var newsList: LiveData<PagedList<Article>>

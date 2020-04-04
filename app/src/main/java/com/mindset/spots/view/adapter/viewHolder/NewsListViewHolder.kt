@@ -1,6 +1,7 @@
 package com.mindset.spots.view.adapter.viewHolder
 
 import android.widget.ImageView
+import androidx.core.os.bundleOf
 import androidx.databinding.BindingAdapter
 import androidx.databinding.ViewDataBinding
 import androidx.recyclerview.widget.RecyclerView
@@ -38,7 +39,7 @@ class NewsListViewHolder constructor(private val dataBinding: ViewDataBinding)
 
 
         itemView.onClick {
-//            val bundle = bundleOf("url" to itemData.html_url)
+            val bundle = bundleOf("url" to itemData.content)
 //            itemView.findNavController().navigate(R.id.action_repoListFragment_to_repoDetailFragment, bundle)
 
         }
