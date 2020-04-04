@@ -9,6 +9,9 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView.ItemDecoration
+import com.mindset.spots.R
 
 import com.mindset.spots.databinding.FragmentHomeBinding
 import com.mindset.spots.view.adapter.NewsListAdapter
@@ -52,10 +55,15 @@ class HomeFragment : Fragment() {
     private fun setupAdapter() {
             adapter = NewsListAdapter()
             val layoutManager = LinearLayoutManager(activity)
-            repo_list_rv.layoutManager = layoutManager
-            repo_list_rv.addItemDecoration(DividerItemDecoration(activity, layoutManager.orientation))
-            repo_list_rv.adapter = adapter
+            recycler_view.layoutManager = layoutManager
+            recycler_view.addItemDecoration(DividerItemDecoration(activity, layoutManager.orientation))
+            recycler_view.adapter = adapter
+
+        val dividerItemDecoration = DividerItemDecoration(
+            recycler_view.getContext(),
+            layoutManager.orientation
+        )
+        recycler_view.addItemDecoration(dividerItemDecoration)
 
     }
-
 }

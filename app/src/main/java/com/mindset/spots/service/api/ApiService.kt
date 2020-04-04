@@ -12,6 +12,6 @@ interface ApiService {
 
 
     @GET("top-headlines")
-    fun getTopHeadLine(@Query("language") search: String = "en", @Query("country") sort: String = "eg"): Call<ArticlesResponse>
+    fun getTopHeadLine(@Query("language") search: String = "en"): Call<ArticlesResponse>
 
 }
