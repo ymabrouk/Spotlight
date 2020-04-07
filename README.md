@@ -1,4 +1,4 @@
-# spotlight
+# Spotlight - News Kotlin Android App - MVVM  
 Used the following components.
 -  Android Jetpack's Navigation component
 - Androidx Paging technique
