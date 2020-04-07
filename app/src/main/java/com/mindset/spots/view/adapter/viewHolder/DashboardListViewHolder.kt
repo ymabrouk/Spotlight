@@ -16,8 +16,8 @@ class DashboardListViewHolder(view: View) : RecyclerView.ViewHolder(view) {
     fun bind(itemData: Article?) {
         if (itemData != null) {
             itemView.title_tv.text = itemData.title
-            itemView.publishedAt_tv.text = itemData.publishedAt
-            itemView.source_tv.text = itemData.author
+            itemView.publishedAt_tv.text =   itemData.source?.name
+            itemView.source_tv.text =itemData.author
 
             if (!itemData.urlToImage.isNullOrEmpty()) {
 

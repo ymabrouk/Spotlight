@@ -50,41 +50,41 @@ class Article{
 
 
 
-
-                @JvmStatic
-                @BindingAdapter("publishedAt")
-                fun publishedTimeAgo(view: TextView, publishedAt: String) {
-//                        if (!publishedAt.isNullOrEmpty()) {
-//                                view.setText(formatPubDate(publishedAt))
-//                        }
-                        view.setText(formatPubDate(publishedAt))
-                }
-                private fun formatPubDate(pubDate: String): String {
-//                           1985-03-04T12:34:56Z
-//                        2020-04-04T00:17:04Z ==: yyyy-MM-dd'T'HH:mm:ssssss'Z'
-//                        2020-04-03T22:53:16.79099Z
-//                        2020-04-03T22:38:00.712168Z
-//                        2020-04-03T22:38:00.712168Z
-//                        val inputFormat =
-//                                SimpleDateFormat("YYYY-MM-DDThh:mm:ss.sTZD")
 //
-
-                        try {
-                                val inputFormat = SimpleDateFormat("yyyy-MM-dd'T'HH:mm:sss'Z'")
-                                val date = inputFormat.parse(pubDate)
-                                print(TimeAgo.using(date.time))
-                                return TimeAgo.using(date.time)
-                        }
-                        catch (e: Exception) {
-                                // handler
-                                return pubDate;
-                        }
-                        finally {
-                                // optional finally block
-                        }
-
-                        return ""
-                }
-
+//                @JvmStatic
+//                @BindingAdapter("publishedAt")
+//                fun publishedTimeAgo(view: TextView, publishedAt: String) {
+////                        if (!publishedAt.isNullOrEmpty()) {
+////                                view.setText(formatPubDate(publishedAt))
+////                        }
+////                        view.setText(formatPubDate(publishedAt))
+//                }
+//                private fun formatPubDate(pubDate: String): String {
+////                           1985-03-04T12:34:56Z
+////                        2020-04-04T00:17:04Z ==: yyyy-MM-dd'T'HH:mm:ssssss'Z'
+////                        2020-04-03T22:53:16.79099Z
+////                        2020-04-03T22:38:00.712168Z
+////                        2020-04-03T22:38:00.712168Z
+////                        val inputFormat =
+////                                SimpleDateFormat("YYYY-MM-DDThh:mm:ss.sTZD")
+////
+//
+//                        try {
+//                                val inputFormat = SimpleDateFormat("yyyy-MM-dd'T'HH:mm:sss'Z'")
+//                                val date = inputFormat.parse(pubDate)
+//                                print(TimeAgo.using(date.time))
+//                                return TimeAgo.using(date.time)
+//                        }
+//                        catch (e: Exception) {
+//                                // handler
+//                                return pubDate;
+//                        }
+//                        finally {
+//                                // optional finally block
+//                        }
+//
+//                        return ""
+//                }
+//
         }
 }

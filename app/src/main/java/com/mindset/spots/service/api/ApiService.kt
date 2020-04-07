@@ -16,7 +16,7 @@ interface ApiService {
     fun getTopHeadLine(@Query("language") search: String = "en"): Call<ArticlesResponse>
 
 
-    @GET("top-headlines")
-    fun getAllNews(@Query("page") page: Int, @Query("pageSize") pageSize: Int,  @Query("language") sort: String = "en"): Single<ArticlesResponse>
+    @GET("everything")
+    fun getAllNews(@Query("page") page: Int, @Query("pageSize") pageSize: Int,  @Query("q") sort: String = "covid19"): Single<ArticlesResponse>
 
 }

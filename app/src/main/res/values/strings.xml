@@ -8,5 +8,8 @@
 
     <string name="api_key_id" translatable="false">74acee37c7cf48829b7fbf4a53e9bf9e</string>
     <string name="no_data_to_display">No data to display</string>
+    <string name="trending">Trending</string>
+    <string name="everything">Everything</string>
+    <string name="sources">sources</string>
 
 </resources>
